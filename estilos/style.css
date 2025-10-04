@@ -2,17 +2,104 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
+@font-face {
+    font-family: 'Verdana Pro';
+    src: url("../fonte/verdana-pro-light.ttf") format("truetype");
+    font-weight: normal;
+}
+
 :root {
     --fonte-enfase: "Passion One";
     --fonte-cordel: Comic Sans MS;
-    --fonte-padrao: Verdana;
+    --fonte-padrao: 'Verdana Pro';
 }
 
 * {
     margin: 0;
     padding: 0;
 }
+header {
+    height: auto;
+    background-color: black;
+    text-align: center;
+    padding: 20px 0px;
+    color: white;
+}
 
-{
-    
+header > h1 {
+    font-family: var(--fonte-enfase);
+    font-size: 8em;
+    text-transform: uppercase;
+}
+
+header > h1 > span {
+    font-size: 1.4em;
+}
+
+header > p {
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+header > p > a {
+    text-decoration: none;
+    color: white;
+}
+
+header > p > a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN */
+section {
+    padding: 200px 40px;
+}
+
+section p {
+    font-family: var(--fonte-cordel);
+    font-size: 4em;
+    line-height: 2em;
+}
+
+section > p#espacamento {
+    margin-bottom: 200px;
+}
+
+section.img-01 {
+    background-image: url("../imagens/background001.jpg");
+    background-attachment: fixed;
+}
+
+section.img > p{
+    background-color: rgba(0, 0, 0, 0.425);
+    width: 1000px;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+section.img-02 {
+    background-image: url("../imagens/background002.jpg");
+    background-attachment: fixed;
+}
+
+footer {
+    margin-top: 200px;
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    padding: 5px;
+    background-color: black;
+    color:white;
+    font-size: 1.2em;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
 }
