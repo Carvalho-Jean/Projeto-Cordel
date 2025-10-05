@@ -18,88 +18,86 @@
     margin: 0;
     padding: 0;
 }
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
 header {
-    height: auto;
     background-color: black;
-    text-align: center;
-    padding: 20px 0px;
     color: white;
+    text-align: center;
 }
 
 header > h1 {
     font-family: var(--fonte-enfase);
-    font-size: 8em;
-    text-transform: uppercase;
-}
-
-header > h1 > span {
-    font-size: 1.4em;
+    padding-top: 50px;
+    font-variant: small-caps;
 }
 
 header > p {
+    padding-bottom: 50px;
+}
+
+header p, footer p {
     font-family: var(--fonte-padrao);
-    font-size: 1.2em;
-    font-weight: 600;
 }
 
-header > p > a {
-    text-decoration: none;
+header a, footer a {
     color: white;
+    text-decoration: none;
+    font-weight: bolder;
 }
 
-header > p > a:hover {
+header a:hover, footer a:hover {
     text-decoration: underline;
 }
 
-/* MAIN */
 section {
-    padding: 200px 40px;
-}
-
-section p {
-    font-family: var(--fonte-cordel);
-    font-size: 4em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte-cordel);
+    font-size: 3.5vw;
 }
 
-section > p#espacamento {
-    margin-bottom: 200px;
+
+
+section.fd-branco {
+    background-color: white;
+    color: black;
 }
 
-section.img-01 {
-    background-image: url("../imagens/background001.jpg");
-    background-attachment: fixed;
-}
-
-section.img > p{
-    background-color: rgba(0, 0, 0, 0.425);
-    width: 1000px;
+section.img {
+    background-color: rgb(51, 51, 51);
     color: white;
-    padding: 10px;
-    border-radius: 5px;
+    background-position: right center;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.349);
+    background-attachment: fixed;
 }
 
-section.img-02 {
+section.img > p {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.527);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img-01 {
+    background-image: url("../imagens/background001.jpg");
+}
+
+section#img-02 {
     background-image: url("../imagens/background002.jpg");
-    background-attachment: fixed;
 }
 
 footer {
-    margin-top: 200px;
-    text-align: center;
-    font-family: var(--fonte-padrao);
-    padding: 5px;
     background-color: black;
-    color:white;
-    font-size: 1.2em;
-}
-
-footer > p > a {
-    text-decoration: none;
     color: white;
-    font-weight: bold;
-}
-
-footer > p > a:hover {
-    text-decoration: underline;
+    text-align: center;
+    padding: 10px;
 }
